@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/CSS" href="Styles_02.css">
+    </head>
+
+    <body>
+        <div id="tab1" class="container">
+            <div class="left-part">
+                <div class="me">
+            <img src="Iamge2.jpg" height="125" width="125" alt="Image of the person"><br>
+        </div>
+              <a href="https://wa.me/+94778712014">
+              <img src="WhatsApp.svg.png" height="30" width="30" alt="Whatsapp logo"></a>
+              <a href="https://www.facebook.com/share/1Egce5Evz6/">
+              <img src="Facebook.png" height="30" width="30" alt="Facebook logo"></a>
+              <a href="mailto:tharushiliyanage029@outlook.com?subject=Business Contact&body=Hello,Can you send me your resume to get a more idea.">
+              <img src="Outlook.png"  height="30" width="30" alt="Gmail logo"></a>
+              <a href="https://www.linkedin.com/in/tharushi-hasinika-963b46308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+              <img src="LinkedIn.png" height="30" width="30" alt="LinkedIn logo"></a>
+            
+          
+      
+              <button onclick="redirectToPage1()">Home</button>
+              <script>
+                function redirectToPage1() {
+        window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2001/Project_01.html";}
+              </script><br>
+      
+              <button onclick="redirectToPage2()">About</button>
+              <script>
+                function redirectToPage2() {
+        window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2002/about.html";}
+              </script><br>
+      
+              <button onclick="redirectToPage3()">Resume</button>
+              <script>
+                function redirectToPage3() {
+        window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2003/Reusme.html";}
+              </script><br>
+      
+              <button onclick="redirectToPage4()">Contact Me</button>
+              <script>
+                function redirectToPage4() {
+        window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2004/Contact.html";}
+              </script><br>
+      
+            <script>
+              function getLastModifiedDate() {
+                  var lastModified = document.lastModified;
+                  var formattedDate = new Date(lastModified).toLocaleDateString();
+                  document.getElementById("lastModified").textContent = "Updated on: " + formattedDate;
+                   }
+              window.onload = getLastModifiedDate;
+          </script>
+              <p id="lastModified" class="date"></p>
+      
+          </div>
+      
+            <div class="right-part">
+                <h1>Tharushi Hasinika</h1>
+                
+                    <h3>Aspiring Software Engineer</h3>
+                    <p class="description">
+
+I am an undergraduate student at the University of Moratuwa, actively pursuing a degree in Information Technology & Management. With a strong passion for software engineering, I am eager to apply my academic knowledge and practical skills to real-world projects.</p>
+
+                
+                <ul class="list-inline">
+                    <li class="topic"><b>Core Skills</b></li>
+                    <li>C</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JavaScript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                </ul>
+                
+                <ul  class="list-inline">
+                    <li class="topic"><b>Soft Skills</b></li>
+                    <li>Leadership</li>
+                    <li>Problem-solving</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                </ul>
+               
+                <ul class="list-inline">
+                    <li class="topic"><b>Interests</b></li>
+                    <li>Gaming</li>
+                    <li>Writing</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reading&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                    <li>Scrabble</li>
+                </ul>
+                </div>
+</div>            
+    </body>
+
+
+</html>

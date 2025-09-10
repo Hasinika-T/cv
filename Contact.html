@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/CSS" href="Styles_04.css">
+</head>
+
+<body>
+    <div id="tab1" class="container">
+        <div class="left-part">
+        <img src="Iamge2.jpg" height="125" width="125" alt="Image of the person" class="me"><br>
+  
+          <a href="https://wa.me/+94778712014">
+          <img src="WhatsApp.svg.png" height="30" width="30" alt="Whatsapp logo"></a>
+          <a href="https://www.facebook.com/share/1Egce5Evz6/">
+          <img src="Facebook.png" height="30" width="30" alt="Facebook logo"></a>
+          <a href="mailto:tharushiliyanage029@outlook.com?subject=Business Contact&body=Hello,Can you send me your resume to get a more idea.">
+          <img src="Outlook.png"  height="30" width="30" alt="Gmail logo"></a>
+          <a href="https://www.linkedin.com/in/tharushi-hasinika-963b46308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+          <img src="LinkedIn.png" height="30" width="30" alt="LinkedIn logo"></a>
+        
+      
+  
+          <button onclick="redirectToPage1()">Home</button>
+          <script>
+            function redirectToPage1() {
+    window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2001/Project_01.html";}
+          </script><br>
+  
+          <button onclick="redirectToPage2()">About</button>
+          <script>
+            function redirectToPage2() {
+    window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2002/about.html";}
+          </script><br>
+  
+          <button onclick="redirectToPage3()">Resume</button>
+          <script>
+            function redirectToPage3() {
+    window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2003/Reusme.html";}
+          </script><br>
+  
+          <button onclick="redirectToPage4()">Contact Me</button>
+          <script>
+            function redirectToPage4() {
+    window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2004/Contact.html";}
+          </script><br>
+  
+  
+        <script>
+          function getLastModifiedDate() {
+              var lastModified = document.lastModified;
+              var formattedDate = new Date(lastModified).toLocaleDateString();
+              document.getElementById("lastModified").textContent = "Updated on: " + formattedDate;
+               }
+          window.onload = getLastModifiedDate;
+      </script>
+          <p id="lastModified" class="date"></p>
+  
+      </div>
+  
+        <div class="right-part">
+        <h1>Contact Me On..,</h1>
+        <a href="https://wa.me/+94778712014">
+        <img src="WhatsApp.svg.png" height="200" width="200"alt="Whatsapp logo" class="icon"></a>
+        <a href="https://www.facebook.com/share/1Egce5Evz6/">
+        <img src="Facebook.png" height="200" width="200" alt="Facebook logo"class="icon"></a>
+        <a href="mailto:tharushiliyanage029@outlook.com?subject=Business Contact&body=Hello,Can you send me your resume to get a more idea.">
+        <img src="Outlook.png"  height="200" width="200" alt="Gmail logo"class="icon"></a>
+        <a href="https://www.linkedin.com/in/tharushi-hasinika-963b46308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+        <img src="LinkedIn.png" height="200" width="200" alt="LinkedIn logo"class="icon">
+
+        </a>
+    </div> 
+    </div>
+</body>
+
+</html>

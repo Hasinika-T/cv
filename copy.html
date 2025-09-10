@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/CSS" href="syles copy.css">
+    </head>
+
+    <body>
+      <div id="tab1" class="container">
+      <div class="left-part">
+      <img src="Iamge2.jpg" height="125" width="125" alt="Image of the person" class="me"><br>
+
+        <a href="https://wa.me/+94778712014">
+        <img src="WhatsApp.svg.png" height="30" width="30" alt="Whatsapp logo" class="icon"></a>
+        <a href="https://www.facebook.com/share/1Egce5Evz6/">
+        <img src="Facebook.png" height="30" width="30" alt="Facebook logo" class="icon"></a>
+        <a href="mailto:tharushiliyanage029@outlook.com?subject=Business Contact&body=Hello,Can you send me your resume to get a more idea.">
+        <img src="Outlook.png"  height="30" width="30" alt="Gmail logo" class="icon"></a>
+        <a href="https://www.linkedin.com/in/tharushi-hasinika-963b46308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+        <img src="LinkedIn.png" height="30" width="30" alt="LinkedIn logo" class="icon"></a>
+      
+        <button onclick="redirectToPage1()">Home</button>
+        <script>
+          function redirectToPage1() {
+  window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2001/Project_01.html";}
+        </script><br>
+
+        <button onclick="redirectToPage2()">About</button>
+        <script>
+          function redirectToPage2() {
+  window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2002/about.html";}
+        </script><br>
+
+        <button onclick="redirectToPage3()">Resume</button>
+        <script>
+          function redirectToPage3() {
+  window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2003/Reusme.html";}
+        </script><br>
+
+        <button onclick="redirectToPage4()">Contact Me</button>
+        <script>
+          function redirectToPage4() {
+  window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2004/Contact.html";}
+        </script><br>
+
+
+      <script>
+        function getLastModifiedDate() {
+            var lastModified = document.lastModified;
+            var formattedDate = new Date(lastModified).toLocaleDateString();
+            document.getElementById("lastModified").textContent = "Updated on: " + formattedDate;
+             }
+        window.onload = getLastModifiedDate;
+    </script>
+        <p id="lastModified" class="date"></p>
+
+    </div>
+
+    
+    <div class="right-part">
+        <h1>Tharushi Hasinika</h1>
+        <h3 id="typing-text"></h3>
+
+        <p class="description" data-logo="logo.png">I am an undergraduate student at the University of Moratuwa, actively pursuing a degree in Information Technology & Management. With a strong passion for software engineering, I am eager to apply my academic knowledge and practical skills to real-world projects.</p>
+        <script>
+            const typingText = document.getElementById('typing-text');
+            const text = "Aspiring Software Engineer";
+            let index = 0;
+            let isTyping = true;
+
+            function typeWriter() {
+            if (index < text.length && isTyping) {
+                typingText.textContent += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            } else if (index === text.length) {
+            
+                setTimeout(() => {
+                index = 0;
+                typingText.textContent = '';
+                typeWriter();
+                }, 2000); 
+            }
+            }
+
+            typeWriter();
+
+        </script>
+
+        <p>Get in touch at:</p>
+        <a href="mailto:tharushiliyanage029@outlook.com?subject=Business Contact&body=Hello,Can you send me your resume to get a more idea."><h2>tharushiliyanage029@outlook.com</h2></a>
+        <button onclick="redirectToPage()" class="Contact">Contact me</button>
+        <script>
+            function redirectToPage(){
+                window.location.href = "file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2004/Contact.html";
+            }
+        </script>
+<script>
+const hoverElements = document.querySelectorAll('.description');
+const rightBackground = document.querySelector('.right-part');
+
+hoverElements.forEach(element => {
+  element.addEventListener('mouseover', () => {
+    const logoSrc = element.getAttribute('data-logo');
+    let logoOverlay = rightBackground.querySelector('.logo-overlay');
+
+    if (!logoOverlay) {
+      logoOverlay = document.createElement('img');
+      logoOverlay.classList.add('logo-overlay');
+      rightBackground.appendChild(logoOverlay);
+    }
+
+    logoOverlay.src = logoSrc;
+    logoOverlay.classList.add('active');
+  });
+
+  element.addEventListener('mouseout', () => {
+    const logoOverlay = rightBackground.querySelector('.logo-overlay');
+    if (logoOverlay) {
+      logoOverlay.classList.remove('active');
+    }
+  });
+});
+</script>
+    </div>
+  </div>
+</body>
+</html>

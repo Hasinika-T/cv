@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/CSS" href="Styles_01.css">
+    </head>
+
+    <body>
+      <div id="tab1" class="container">
+      <div class="left-part">
+      <img src="Image.jpg" height="200" width="200" alt="Image of the person">
+
+        <a href="https://wa.me/+94778712014">
+        <img src="WhatsApp.svg.png" height="50" width="50" alt="Whatsapp logo"></a>
+        <a href="https://www.facebook.com/share/1Egce5Evz6/">
+        <img src="Facebook.png" height="50" width="50" alt="Facebook logo"></a>
+        <a href="mailto:tharushiliyanage029@outlook.com?subject=Business Contact&body=Hello,Can you send me your resume to get a more idea.">
+        <img src="Outlook.png"  height="50" width="50" alt="Gmail logo"></a>
+        <a href="https://www.linkedin.com/in/tharushi-hasinika-963b46308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+        <img src="LinkedIn.png" height="50" width="50" alt="LinkedIn logo"></a>
+      
+    
+
+      <nav>
+        <ul class="tabs">
+          <li class="tab"><a href="file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2001/Project_01.html">Home</a></li>
+          <li class="tab"><a href="file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2002/about.html">About</a></li>
+          <li class="tab"><a href="file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2003/Reusme.html">Resume</a></li>
+          <li class="tab"><a href="file:///C:/Users/tharu/OneDrive/Documents/Projects/Project%2001/Page%2004/Contact.html">contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+      <div class="right-part">
+        <H1>Hi I'm Tharushi..,</H1>
+        <p>I'm a dedicated first-year IT&M student at the University of Moratuwa, passionate about crafting innovative software solutions. Currently, I'm immersed in a hardware project to gain hands-on experience in the intersection of hardware and software.
+
+            My goal is to become a proficient full-stack developer, skilled in both front-end and back-end development. I'm eager to explore diverse technologies and contribute to impactful projects.</p>
+        <p>Get in touch at:</p>
+        <a href="mailto:tharushiliyanage029@outlook.com?subject=Business Contact&body=Hello,Can you send me your resume to get a more idea."><h2>tharushiliyanage029@outlook.com</h2></a>
+        <button onclick="redirectToPage()">Contact me</button>
+        <script>
+            function redirectToPage(){
+                window.location.href = "#tab4";
+            }
+        </script>
+
+    </div>
+  </div>
+  <hr>
+</body>
+
+<footer>
+  <script>
+    function getLastModifiedDate() {
+        var lastModified = document.lastModified;
+        var formattedDate = new Date(lastModified).toLocaleDateString();
+        document.getElementById("lastModified").textContent = "Updated on: " + formattedDate;
+         }
+    window.onload = getLastModifiedDate;
+</script>
+    <p id="lastModified"></p>
+    <button onclick="openLink()">LinkedIn</button>
+    <script>
+        function openLink(){
+            window.location.href = "https://www.linkedin.com/in/tharushi-hasinika-963b46308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+        }
+    </script>
+</footer>
+
+
+</html>
+          
+
+
+    
